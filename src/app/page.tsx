@@ -50,7 +50,7 @@ export default function LandingPage() {
 
         <div className="relative w-full h-56 md:h-80 rounded-xl overflow-hidden shadow-2xl shadow-primary/10 mb-8">
             <Image
-                src="https://picsum.photos/1200/400"
+                src="/Cruise.png"
                 alt="Beautiful cruise ship on the ocean"
                 data-ai-hint="cruise ship ocean"
                 fill
