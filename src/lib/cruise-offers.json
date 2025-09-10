@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Canary Islands from Southampton",
     "date": "April 20, 2026",
-    "imageUrl": "https://picsum.photos/seed/cruise1/600/400",
+    "imageUrl": "https://m.simplycruises.com/fleet/UV26.jpg",
     "imageAlt": "Map of a cruise itinerary for the Canary Islands from Southampton.",
     "details": [
       "12 nights",
@@ -15,48 +15,108 @@
     ],
     "originalPrice": 1049,
     "discountedPrice": 931,
-    "ship": "Anthem of the Seas",
+    "ship": "MSC Virtuosa",
     "destination": "Canary Islands",
     "departureDates": "20th April 2026"
   },
   {
     "id": 2,
-    "title": "Alaskan Glacier Adventure",
-    "date": "July 15, 2025",
-    "imageUrl": "https://picsum.photos/seed/cruise2/600/400",
-    "imageAlt": "Map of a cruise itinerary for an Alaskan Glacier adventure.",
+    "title": "Mini-Cruise from Southampton",
+    "date": "May 2, 2026",
+    "imageUrl": "https://m.simplycruises.com/fleet/UV27.jpg",
+    "imageAlt": "Map of a cruise itinerary for Mini-Cruise from Southampton.",
     "details": [
-      "7 nights",
-      "Seattle to Seattle",
-      "From: <del>£1299</del> £1099pp",
-      "<strong>Whale Watching Excursion Included!</strong>",
-      "All-Inclusive Dining",
-      "Onboard Credit available"
+      "2 nights",
+      "Southampton to Southampton",
+      "From: <del>£319</del> £283pp",
+      "<strong>Premium Drinks Available!</strong>",
+      "Gratuities Included",
+      "Voyager Discount available"
     ],
-    "originalPrice": 1299,
-    "discountedPrice": 1099,
-    "ship": "Quantum of the Seas",
-    "destination": "Alaska",
-    "departureDates": "15th July 2025"
+    "originalPrice": 319,
+    "discountedPrice": 283,
+    "ship": "MSC Virtuosa",
+    "destination": "Cherbourg 2 Nights",
+    "departureDates": "2nd May 2026"
   },
   {
     "id": 3,
-    "title": "Mediterranean Wonders",
-    "date": "September 5, 2025",
-    "imageUrl": "https://picsum.photos/seed/cruise3/600/400",
-    "imageAlt": "Map of a cruise itinerary for a Mediterranean cruise.",
+    "title": "Mini-Cruise from Southampton",
+    "date": "May 4, 2026",
+    "imageUrl": "https://m.simplycruises.com/fleet/UV28.jpg",
+    "imageAlt": "Map of a cruise itinerary for a 5 Night Mini Cruise From Southampton.",
     "details": [
-      "10 nights",
-      "Rome to Barcelona",
-      "From: <del>£1549</del> £1399pp",
-      "<strong>Free Wifi Package!</strong>",
+      "5 nights",
+      "Southampton to Southampton",
+      "From: <del>£499</del> £443pp",
+      "<strong>Premium Drinks Available!</strong>",
       "Gratuities Included",
-      "Flights from UK available"
+      "Voyager Discount available"
     ],
-    "originalPrice": 1549,
-    "discountedPrice": 1399,
-    "ship": "Odyssey of the Seas",
-    "destination": "Mediterranean",
-    "departureDates": "5th September 2025"
+    "originalPrice": 499,
+    "discountedPrice": 443,
+    "ship": "MSC Virtuosa",
+    "destination": "Cherbourg 5 Nights",
+    "departureDates": "4th May 2026"
+  },
+  {
+    "id": 4,
+    "title": "Norwegian Fjords from Southampton",
+    "date": "May 9, 2026",
+    "imageUrl": "https://m.simplycruises.com/fleet/UVOS.jpg",
+    "imageAlt": "Map of a cruise itinerary for a Norwegian Fjords Cruise from Southampton.",
+    "details": [
+      "7 nights",
+      "Southampton to Southampton",
+      "From: <del>£729</del> £647pp",
+      "<strong>Premium Drinks Available!</strong>",
+      "Gratuities Included",
+      "Voyager Discount available"
+    ],
+    "originalPrice": 729,
+    "discountedPrice": 647,
+    "ship": "MSC Virtuosa",
+    "destination": "Norwegian Fjords",
+    "departureDates": "9th May 2026"
+  },
+  {
+    "id": 5,
+    "title": "Norwegian Fjords from Southampton",
+    "date": "May 16, 2026",
+    "imageUrl": "https://m.simplycruises.com/fleet/UV28.jpg",
+    "imageAlt": "Map of a cruise itinerary for a Norwegian Fjords Cruise from Southampton.",
+    "details": [
+      "7 nights",
+      "Southampton to Southampton",
+      "From: <del>£749</del> £665pp",
+      "<strong>Premium Drinks Available!</strong>",
+      "Gratuities Included",
+      "Voyager Discount available"
+    ],
+    "originalPrice": 749,
+    "discountedPrice": 665,
+    "ship": "MSC Virtuosa",
+    "destination": "Norwegian Fjords",
+    "departureDates": "16th May 2026"
+  },
+  {
+    "id": 6,
+    "title": "Mini-Cruise from Southampton",
+    "date": "May 23, 2026",
+    "imageUrl": "https://m.simplycruises.com/fleet/UV27.jpg",
+    "imageAlt": "Map of a cruise itinerary for a 2 Night Mini Cruise From Southampton.",
+    "details": [
+      "5 nights",
+      "Southampton to Southampton",
+      "From: <del>£349</del> £309pp",
+      "<strong>Premium Drinks Available!</strong>",
+      "Gratuities Included",
+      "Voyager Discount available"
+    ],
+    "originalPrice": 349,
+    "discountedPrice": 309,
+    "ship": "MSC Virtuosa",
+    "destination": "Cherbourg 2 Nights",
+    "departureDates": "23rd May 2026"
   }
-]]
+]
