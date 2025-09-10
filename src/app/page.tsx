@@ -53,6 +53,7 @@ export default function LandingPage() {
                 src="https://iframe.mediadelivery.net/embed/58732/3c61795a-5d9d-42f0-8e69-bb760aa53c0b?autoplay=true&loop=true&muted=true&preload=true&responsive=true" 
                 className="absolute top-0 left-0 w-full h-full border-0"
                 allow="autoplay; fullscreen" 
+                referrerPolicy="no-referrer"
                 allowFullScreen
             ></iframe>
         </div>
