@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Canary Islands from Southampton",
+    "date": "April 20, 2026",
+    "imageUrl": "https://picsum.photos/seed/cruise1/600/400",
+    "imageAlt": "Map of a cruise itinerary for the Canary Islands from Southampton.",
+    "details": [
+      "12 nights",
+      "Southampton to Southampton",
+      "From: <del>£1049</del> £931pp",
+      "<strong>Premium Drinks Available!</strong>",
+      "Gratuities Included",
+      "Voyager Discount available"
+    ],
+    "originalPrice": 1049,
+    "discountedPrice": 931,
+    "ship": "Anthem of the Seas",
+    "destination": "Canary Islands",
+    "departureDates": "20th April 2026"
+  },
+  {
+    "id": 2,
+    "title": "Alaskan Glacier Adventure",
+    "date": "July 15, 2025",
+    "imageUrl": "https://picsum.photos/seed/cruise2/600/400",
+    "imageAlt": "Map of a cruise itinerary for an Alaskan Glacier adventure.",
+    "details": [
+      "7 nights",
+      "Seattle to Seattle",
+      "From: <del>£1299</del> £1099pp",
+      "<strong>Whale Watching Excursion Included!</strong>",
+      "All-Inclusive Dining",
+      "Onboard Credit available"
+    ],
+    "originalPrice": 1299,
+    "discountedPrice": 1099,
+    "ship": "Quantum of the Seas",
+    "destination": "Alaska",
+    "departureDates": "15th July 2025"
+  },
+  {
+    "id": 3,
+    "title": "Mediterranean Wonders",
+    "date": "September 5, 2025",
+    "imageUrl": "https://picsum.photos/seed/cruise3/600/400",
+    "imageAlt": "Map of a cruise itinerary for a Mediterranean cruise.",
+    "details": [
+      "10 nights",
+      "Rome to Barcelona",
+      "From: <del>£1549</del> £1399pp",
+      "<strong>Free Wifi Package!</strong>",
+      "Gratuities Included",
+      "Flights from UK available"
+    ],
+    "originalPrice": 1549,
+    "discountedPrice": 1399,
+    "ship": "Odyssey of the Seas",
+    "destination": "Mediterranean",
+    "departureDates": "5th September 2025"
+  }
+]]

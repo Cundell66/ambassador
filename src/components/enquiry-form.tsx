@@ -24,18 +24,19 @@ interface EnquiryFormProps {
   onSubmit: (data: EnquiryFormValues) => Promise<void>;
   isLoading: boolean;
   serverError: string | null;
+  initialData?: Partial<EnquiryFormValues>;
 }
 
-export function EnquiryForm({ onSubmit, isLoading, serverError }: EnquiryFormProps) {
+export function EnquiryForm({ onSubmit, isLoading, serverError, initialData }: EnquiryFormProps) {
   const form = useForm<EnquiryFormValues>({
     resolver: zodResolver(formSchema),
     mode: "onChange",
     defaultValues: {
       name: "",
       email: "",
-      ship: "",
-      departureDates: "",
-      destination: "",
+      ship: initialData?.ship || "",
+      departureDates: initialData?.departureDates || "",
+      destination: initialData?.destination || "",
     },
   });
 
@@ -81,7 +82,7 @@ export function EnquiryForm({ onSubmit, isLoading, serverError }: EnquiryFormPro
               name="ship"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Cruise Ship (if known)</FormLabel>
+                  <FormLabel>Cruise Ship</FormLabel>
                   <FormControl>
                     <Input placeholder="e.g., Symphony of the Seas" {...field} />
                   </FormControl>
@@ -94,7 +95,7 @@ export function EnquiryForm({ onSubmit, isLoading, serverError }: EnquiryFormPro
               name="destination"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Desired Destination</FormLabel>
+                  <FormLabel>Destination</FormLabel>
                   <FormControl>
                     <Input placeholder="e.g., Caribbean, Alaska, Mediterranean" {...field} />
                   </FormControl>
@@ -107,7 +108,7 @@ export function EnquiryForm({ onSubmit, isLoading, serverError }: EnquiryFormPro
               name="departureDates"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Desired Departure Dates</FormLabel>
+                  <FormLabel>Departure Dates</FormLabel>
                   <FormControl>
                     <Input placeholder="e.g., Summer 2025, December 2024" {...field} />
                   </FormControl>
