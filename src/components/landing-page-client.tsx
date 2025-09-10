@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import Image from "next/image";
 import type { SuggestAlternativeCruisesOutput } from "@/ai/flows/suggest-alternative-cruises";
 import { EnquiryForm } from "@/components/enquiry-form";
 import { CruiseSuggestions } from "@/components/cruise-suggestions";
@@ -63,14 +64,26 @@ export function LandingPageClient({ cruiseOffers }: LandingPageClientProps) {
           </p>
         </header>
 
-        <div className="relative w-full h-56 md:h-80 rounded-xl overflow-hidden shadow-2xl shadow-primary/10 mb-12">
-            <iframe 
-                src="https://iframe.mediadelivery.net/embed/58732/3c61795a-5d9d-42f0-8e69-bb760aa53c0b?autoplay=true&loop=true&muted=true&preload=true&responsive=true" 
-                className="absolute top-0 left-0 w-full h-full border-0"
-                allow="autoplay; fullscreen" 
-                referrerPolicy="no-referrer"
-                allowFullScreen
-            ></iframe>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-12">
+            <div className="relative w-full h-56 md:h-96 rounded-xl overflow-hidden shadow-2xl shadow-primary/10">
+                <iframe 
+                    src="https://iframe.mediadelivery.net/embed/58732/3c61795a-5d9d-42f0-8e69-bb760aa53c0b?autoplay=true&loop=true&muted=true&preload=true&responsive=true" 
+                    className="absolute top-0 left-0 w-full h-full border-0"
+                    allow="autoplay; fullscreen" 
+                    referrerPolicy="no-referrer"
+                    allowFullScreen
+                ></iframe>
+            </div>
+            <div className="relative w-full h-56 md:h-96 rounded-xl overflow-hidden shadow-2xl shadow-primary/10 hidden lg:block">
+                <Image
+                    src="/Cruise.png"
+                    alt="Luxury cruise ship"
+                    fill
+                    sizes="(max-width: 1024px) 0vw, 50vw"
+                    className="object-cover"
+                    data-ai-hint="cruise ship"
+                />
+            </div>
         </div>
 
         <section id="offers" className="mb-12">
