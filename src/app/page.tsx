@@ -49,15 +49,12 @@ export default function LandingPage() {
         </header>
 
         <div className="relative w-full h-56 md:h-80 rounded-xl overflow-hidden shadow-2xl shadow-primary/10 mb-8">
-            <Image
-                src="/Cruise.png"
-                alt="Beautiful cruise ship on the ocean"
-                data-ai-hint="cruise ship ocean"
-                fill
-                className="object-cover"
-                priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            <iframe 
+                src="https://iframe.mediadelivery.net/embed/58732/3c61795a-5d9d-42f0-8e69-bb760aa53c0b?autoplay=true&loop=true&muted=true&preload=true&responsive=true" 
+                className="absolute top-0 left-0 w-full h-full border-0"
+                allow="autoplay; fullscreen" 
+                allowFullScreen
+            ></iframe>
         </div>
 
         <div className="w-full max-w-2xl mx-auto">
