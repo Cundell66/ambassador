@@ -9,12 +9,14 @@ import { submitEnquiry } from "@/app/actions";
 import { Anchor, Ship } from "lucide-react";
 import type { EnquiryFormValues } from "@/components/enquiry-form";
 import { OfferCard, type CruiseOffer } from "@/components/offer-card";
+import { FaqSection, type FaqItem } from "@/components/faq-section";
 
 interface LandingPageClientProps {
     cruiseOffers: CruiseOffer[];
+    faqItems: FaqItem[];
 }
 
-export function LandingPageClient({ cruiseOffers }: LandingPageClientProps) {
+export function LandingPageClient({ cruiseOffers, faqItems }: LandingPageClientProps) {
   const [submissionState, setSubmissionState] = useState<SuggestAlternativeCruisesOutput | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -95,7 +97,7 @@ export function LandingPageClient({ cruiseOffers }: LandingPageClientProps) {
             </div>
         </section>
 
-        <div ref={formRef} className="w-full max-w-2xl mx-auto scroll-mt-20">
+        <div ref={formRef} className="w-full max-w-2xl mx-auto scroll-mt-20 mb-16">
           {submissionState ? (
             <CruiseSuggestions suggestions={submissionState.suggestions} />
           ) : (
@@ -108,8 +110,11 @@ export function LandingPageClient({ cruiseOffers }: LandingPageClientProps) {
             />
           )}
         </div>
+
+        <FaqSection items={faqItems} />
+
       </main>
-      <footer className="w-full text-center p-4">
+      <footer className="w-full text-center p-4 mt-8">
         <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Get That Cruise. All Rights Reserved.</p>
       </footer>
     </div>
