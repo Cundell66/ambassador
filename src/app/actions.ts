@@ -11,6 +11,8 @@ const EnquirySchema = z.object({
   ship: z.string().min(3, 'Please enter a valid ship name.'),
   departureDates: z.string().min(1, 'Please enter your desired departure dates.'),
   destination: z.string().min(3, 'Please enter your desired destination.'),
+  adults: z.string().min(1, "Please select the number of adults."),
+  children: z.string().min(1, "Please select the number of children."),
 });
 
 async function sendEnquiryEmail(data: z.infer<typeof EnquirySchema>) {
@@ -42,6 +44,8 @@ async function sendEnquiryEmail(data: z.infer<typeof EnquirySchema>) {
       <p><strong>Ship:</strong> ${data.ship}</p>
       <p><strong>Desired Dates:</strong> ${data.departureDates}</p>
       <p><strong>Destination:</strong> ${data.destination}</p>
+      <p><strong>Adults:</strong> ${data.adults}</p>
+      <p><strong>Children:</strong> ${data.children}</p>
     `,
   };
 

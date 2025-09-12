@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Loader2, AlertCircle } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
@@ -16,6 +17,8 @@ const formSchema = z.object({
   ship: z.string().min(3, "Please enter a valid ship name."),
   departureDates: z.string().min(1, "Please enter your desired departure dates."),
   destination: z.string().min(3, "Please enter your desired destination."),
+  adults: z.string().min(1, "Please select the number of adults."),
+  children: z.string().min(1, "Please select the number of children."),
 });
 
 export type EnquiryFormValues = z.infer<typeof formSchema>;
@@ -37,6 +40,8 @@ export function EnquiryForm({ onSubmit, isLoading, serverError, initialData }: E
       ship: initialData?.ship || "",
       departureDates: initialData?.departureDates || "",
       destination: initialData?.destination || "",
+      adults: initialData?.adults || "2",
+      children: initialData?.children || "0",
     },
   });
 
@@ -116,6 +121,53 @@ export function EnquiryForm({ onSubmit, isLoading, serverError, initialData }: E
                 </FormItem>
               )}
             />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <FormField
+                control={form.control}
+                name="adults"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Number of Adults</FormLabel>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select number of adults" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        {[...Array(11).keys()].slice(1).map(i => (
+                          <SelectItem key={i} value={String(i)}>{i}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="children"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Number of Children</FormLabel>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select number of children" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        {[...Array(11).keys()].map(i => (
+                          <SelectItem key={i} value={String(i)}>{i}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
             
             {serverError && (
               <Alert variant="destructive">

@@ -28,6 +28,13 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.msccruises.co.uk',
+        port: '',
+        pathname: '/**',
+      },
+
     ],
   },
   // output: 'standalone',
